@@ -7,11 +7,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class WebReader {
-
 	private Elements elements = null;
-	
-
-	
 	public void getContentFromURWithJsoup(String url) {
 		try {
 			Document doc = Jsoup.connect(url).get();
